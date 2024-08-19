@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.sticky-nav');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('show-menu');
+    });
+});
+
+
 // Handle certificate image maximization
 function maximizeImage(img) {
     // Create an overlay for the maximized image
