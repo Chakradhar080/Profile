@@ -1,11 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.sticky-nav');
 
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('show-menu');
-    });
-});
 
 
 // Handle certificate image maximization
@@ -32,5 +25,14 @@ function maximizeImage(img) {
 document.querySelectorAll('.see-more').forEach(function (element) {
     element.addEventListener('click', function () {
         // Expand the project description or navigate to a detailed project page
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.sticky-nav');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('show-menu');
     });
 });
