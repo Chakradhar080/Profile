@@ -81,36 +81,65 @@ header {
 }
 
 /* Sticky Navigation Bar */
+/* Base styles for the navigation bar */
 .sticky-nav {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px;
     z-index: 1000;
-    display: flex;
-    justify-content: center; /* Center the navigation items horizontally */
 }
 
 .sticky-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Display the list items in one line */
+    display: flex;
+    justify-content: space-around;
 }
 
-.sticky-nav ul li {
-    margin: 0 15px;
+.sticky-nav li {
+    display: inline;
 }
 
-.sticky-nav ul li a {
-    color: #fff;
+.sticky-nav a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 14px 20px;
+    display: block;
 }
 
-.sticky-nav ul li a:hover {
-    text-decoration: underline;
+.sticky-nav a:hover {
+    background-color: #575757;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .sticky-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sticky-nav ul {
+        flex-direction: column;
+        display: none; /* Hide menu items initially */
+    }
+
+    .sticky-nav.show-menu ul {
+        display: flex; /* Show menu items when toggle is active */
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
 }
 
 
