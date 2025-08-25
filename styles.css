@@ -64,13 +64,13 @@ header {
 
 .social-media {
     display: flex;
-    gap: 1rem; /* Adjust the spacing between icons */
+    gap: 1rem;
     justify-content: center;
-    margin-top: 1rem; /* Adjust as needed */
+    margin-top: 1rem;
 }
 
 .social-icon {
-    width: 30px; /* Adjust size as needed */
+    width: 30px;
     height: 30px;
     border-radius: 50%;
     transition: transform 0.3s ease;
@@ -81,14 +81,15 @@ header {
 }
 
 /* Sticky Navigation Bar */
-/* Base styles for the navigation bar */
 .sticky-nav {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #333;
-    padding: 10px;
+    padding: 10px 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
 
 .sticky-nav ul {
@@ -96,52 +97,21 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
 }
 
-.sticky-nav li {
-    display: inline;
+.sticky-nav ul li {
+    margin: 0 15px;
 }
 
-.sticky-nav a {
-    color: white;
+.sticky-nav ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 14px 20px;
-    display: block;
+    font-weight: bold;
 }
 
-.sticky-nav a:hover {
-    background-color: #575757;
+.sticky-nav ul li a:hover {
+    text-decoration: underline;
 }
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-    .sticky-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sticky-nav ul {
-        flex-direction: column;
-        display: none; /* Hide menu items initially */
-    }
-
-    .sticky-nav.show-menu ul {
-        display: flex; /* Show menu items when toggle is active */
-    }
-
-    .menu-toggle {
-        display: block;
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 18px;
-        cursor: pointer;
-    }
-}
-
 
 /* About Me Section */
 .about-container {
@@ -201,6 +171,50 @@ header {
     font-size: 24px;
 }
 
+/* Work Experience Section */
+#work-experience {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#work-experience h2 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.experience-item {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Work Experience Certificates */
+.experience-cert {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.experience-cert img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-cert img:hover {
+    transform: scale(1.1);
+}
+
 /* Certifications Section */
 #certifications {
     padding: 60px 20px;
@@ -214,9 +228,26 @@ header {
     text-align: center;
 }
 
+/* Certifications Grid */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
 .certification-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
     text-align: center;
-    margin: 20px auto;
+}
+
+.certification-item:hover {
+    transform: translateY(-8px);
 }
 
 .certificate-thumb {
@@ -231,6 +262,7 @@ header {
     transform: scale(1.1);
 }
 
+/* Image Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -249,7 +281,6 @@ header {
     max-height: 80%;
     border-radius: 10px;
 }
-
 
 /* Skills Section */
 #skills {
@@ -318,18 +349,6 @@ header {
 .project-item h3 {
     color: #333;
     font-size: 24px;
-}
-
-.see-more {
-    color: #007BFF;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-.see-more:hover {
-    color: #0056b3;
 }
 
 /* Workshops and Hackathons Section */
@@ -438,6 +457,3 @@ header {
         transform: translateX(-100%);
     }
 }
-
-
-
