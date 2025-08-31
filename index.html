@@ -10,7 +10,7 @@
     <header id="hero">
         <div class="hero-content">
             <h1>CHAKRADHAR MADURI</h1>
-            <p id="specifications">B.TECH|CSE|AI & ML Enthusiastic</p>
+            <p id="specifications">B.TECH|CSE|Python Developer|AI & ML Enthusiastic</p>
             <div class="buttons">
                 <a href="RESUME.pdf" class="btn" download>Download Resume</a>
                 <a href="#contact" class="btn">Contact</a>
@@ -41,9 +41,9 @@
         <li><a href="#about">About</a></li>
         <li><a href="#qualifications">Qualifications</a></li>
 		<li><a href="#work-experience">Work Experience</a></li>
+		<li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#workshops">Workshops</a></li>
         <li><a href="#interests">Interests</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -97,7 +97,16 @@ Feel free to connect with me on LinkedIn or reach out through my contact informa
     <!-- Work Experience Section -->
     <section id="work-experience">
         <h2>Work Experience</h2>
-
+	<div class="experience-item">
+            <h3>Python Developer Intern</h3>
+            <p><strong>Durbhasi Gurukulam</strong></p>
+            <p>Duration: Sep 2025 - Present</p>
+            <p>As a Python Developer, my role involves designing and building backend applications, developing RESTful APIs, and working with databases such as MySQL for efficient data management. I focus on writing clean, scalable code, implementing authentication and security, and deploying applications using tools like Docker and Git to deliver reliable real-world solutions.</p>
+            <div class="experience-cert">
+                <img src="" alt="Currently working" class="certificate-thumb" onclick="maximizeImage(this)">
+            </div>
+        </div>
+		
 	<div class="experience-item">
             <h3>Virtual Internship – Introduction to Data Science</h3>
             <p><strong>Commonwealth Bank</strong></p>
@@ -136,6 +145,28 @@ Gained exposure to data-driven decision-making processes and stakeholder communi
 	 
     </section>
 
+	 <section id="projects">
+        <h2>Projects</h2>
+
+	<div class="project-item">
+            <h3>SmartTask – End-to-End Task Management Application</h3>
+            <p>I developed a full-stack Task Management System using FastAPI (Python) for the backend, React.js for the frontend, and MySQL for data persistence. The application supports complete CRUD operations with secure JWT-based authentication, proper validation, and error handling. I designed and integrated a relational database schema with SQLAlchemy ORM, built an interactive React interface with protected routes, and containerized the entire system using Docker & Docker Compose. The project also includes API documentation via Swagger and Postman, making it easy to test and collaborate.</p>
+            <a href="https://github.com/Chakradhar080/SmartTask-End-to-End-Task-Management-Application.git">View My GitHub Project</a>
+        </div>
+		 
+	<div class="project-item">
+            <h3>Blockchain-Based Certificate Verification System</h3>
+            <p>A secure and tamper-proof platform for issuing and verifying academic certificates using blockchain and SHA-256 hashing. Admins can issue certificates, while students can verify them independently through an interactive Tkinter GUI. This system ensures authenticity, reduces manual effort, and builds trust between institutions, students, and employers.</p>
+            <a href="https://github.com/Chakradhar080/Blockchain-Based-Certificate-Verification-System.git">View My GitHub Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>ECLAT Algorithm</h3>
+            <p>The ECLAT (Equivalence Class Transformation) algorithm identifies frequent itemsets by using a vertical data format where items are linked to their transaction lists. It intersects these transaction lists to find which item combinations appear together frequently. This depth-first search approach avoids generating many candidate itemsets, making it more efficient. However, it can be memory-intensive for large datasets and complex to implement. ECLAT is useful in market basket analysis and other pattern discovery tasks. </p>
+            <a href="https://github.com/Chakradhar080/ECLAT-Algorithm.git">View My GitHub Project</a>
+        </div>
+    </section>
+	
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="certifications-grid">
@@ -218,21 +249,6 @@ I extend my sincere gratitude to TCS iON for providing this valuable learning op
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-
-	<div class="project-item">
-            <h3>Blockchain-Based Certificate Verification System</h3>
-            <p>A secure and tamper-proof platform for issuing and verifying academic certificates using blockchain and SHA-256 hashing. Admins can issue certificates, while students can verify them independently through an interactive Tkinter GUI. This system ensures authenticity, reduces manual effort, and builds trust between institutions, students, and employers.</p>
-            <a href="https://github.com/Chakradhar080/Blockchain-Based-Certificate-Verification-System.git">View My GitHub Project</a>
-        </div>
-
-        <div class="project-item">
-            <h3>ECLAT Algorithm</h3>
-            <p>The ECLAT (Equivalence Class Transformation) algorithm identifies frequent itemsets by using a vertical data format where items are linked to their transaction lists. It intersects these transaction lists to find which item combinations appear together frequently. This depth-first search approach avoids generating many candidate itemsets, making it more efficient. However, it can be memory-intensive for large datasets and complex to implement. ECLAT is useful in market basket analysis and other pattern discovery tasks. </p>
-            <a href="https://github.com/Chakradhar080/ECLAT-Algorithm.git">View My GitHub Project</a>
-        </div>
-    </section>
 
     <section id="workshops">
         <h2>Workshops & Hackathons</h2>
@@ -267,5 +283,6 @@ I extend my sincere gratitude to TCS iON for providing this valuable learning op
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
